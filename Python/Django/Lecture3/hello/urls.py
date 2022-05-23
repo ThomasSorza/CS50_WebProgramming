@@ -1,6 +1,6 @@
 from django.urls import path
 
-from . import views
+from . import views # the . to indicate the current directory
 
 urlpatterns = [
     path("", views.index, name="index"),
