@@ -8,7 +8,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    height: 50px;
+    height: 6rem;
     background-color: #2d2c2c;
     color: #fff;
     display: flex;
@@ -22,10 +22,29 @@ a {
     color: #fff;
     text-decoration: none;
     margin-right: 20px;
-    font-size: 60%;
+    font-size: 90%;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    
+}
+
+p {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 90%;
     transition: all 0.3s ease;
     border-bottom: 2px solid transparent;
 }
+
+
+#logo {
+    max-width: 36%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    height: auto;
+}  
+
   
 a:hover {
     border-bottom: 1px solid #fff;
@@ -36,5 +55,31 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    size: 3rem;
+    height: 90vh; /* define 100% height of the viewport */
+} 
+  
+input {
+    border-radius: 10px; 
+    margin: 5px; 
+    font-size: 160%; 
+}
+
+input[type="submit"] {
+    transition: all 0.3s ease;
+    font-size: 130%;
+}
+
+input[type="submit"]:hover {
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
