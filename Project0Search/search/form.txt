@@ -1,0 +1,26 @@
+ form structure for the google advanced features search in html format
+ 
+ 
+ <form action="https://www.google.com/search" method="get">
+            <input type="text" name="as_q" placeholder="All these words">
+            <input type="text" name="as_epq" placeholder="Exact word or phrase">
+            <input type="text" name="as_oq" placeholder="Any of these words">
+            <input type="text" name="as_eq" placeholder="None of these words">
+            <input type="text" name="as_nlo" placeholder="Number range">
+            <input type="text" name="as_nhi" placeholder="Number range">
+            <select name="as_occt" id="as_occt">
+              <option value="">All results</option>
+              <option value="i">Include</option>
+              <option value="e">Exclude</option>
+            </select>
+            <input type="text" name="as_filetype" placeholder="File type">
+            <input type="text" name="as_sitesearch" placeholder="Site or domain">
+            <select name="as_rights" id="as_rights">
+              <option value=\"\">Not filtered by license</option>
+              <option value="cc_publicdomain">Free to use or share</option>
+              <option value="cc_attribute">Free to use or share, even commercially</option>
+              <option value="cc_noncommercial">Free to use or share, even commercially</option>
+              <option value="cc_nonp"></option>
+            </select>
+            <input type="submit" value="Google Search">
+          </form>

@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Search</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="advanced.css">
 </head>
 <body>
-    <!--Link to go back to the search page-->
-    <header>
-        <nav>
-            <a href="index.html">Go back to Google search</a>
-        </nav>
-    </header>
-    <!--Google Search bar-->
-    <form action="https://www.google.com/search">
-        <img id="logo" src="img/google_logo.png">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
-    <footer>
+    <div class="page"> <!--works as a main-->
+        <header>
+            <nav class="navbar"> <!--top bar-->
+                <img href="index.html" src="img/google_logo_white.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Go back to Google standar search</a></li>
+                </ul>
+            </nav>
+            <span>Advanced Search</span>
+        </header>
+        <!--Google advanced Search options -->
+        <form action="https://www.google.com/search">
+            <ul>
+                <li><label>Show pages that contain...</label></li>
+                <li><label>All these words:</label><input type="text" name="as_q" placeholder="All these words"><label>Enter the important words: Tricolor Buzzard Terrier.</label></li>
+                <li><label>Exact word or phrase:</label><input type="text" name="as_epq" placeholder="Exact word or phrase"><label>Enter the exact words in quotation marks: "Buzzard terrier".</label></li>
+                <li><label>Any of these words:</label><input type="text" name="as_q" placeholder="Any of these words"><label>Enter OR between the words you want: Miniature OR standard.</label></li>
+                <li><label>None of these words:</label><input type="text" name="as_eq" placeholder="None of these words"><label>Enter a minus sign right in front of the words you do not want to appear: - Rodent, - "Jack Russell" .</label></li>
+                <!--button-->
+                <li><input type="submit" value="Google Advance Search"></li> 
+            </ul>
+        </form>
+       
         <p>Made by Thomas Sorza for CS50.</p>
-    </footer>
+    </div>
 </body>
 </html>

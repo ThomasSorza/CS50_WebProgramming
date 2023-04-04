@@ -8,13 +8,13 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    height: 6rem;
-    background-color: #2d2c2c;
+    height: 5rem;
+    background-color: #202020;
     color: #fff;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -22,7 +22,7 @@ a {
     color: #fff;
     text-decoration: none;
     margin-right: 20px;
-    font-size: 90%;
+    font-size: 101%;
     transition: all 0.3s ease;
     border-bottom: 2px solid transparent;
     
@@ -39,7 +39,7 @@ p {
 
 
 #logo {
-    max-width: 36%;
+    max-width: 32%;
     margin-bottom: 1%;
     margin-top: 2%;
     height: auto;
@@ -60,20 +60,34 @@ form {
 } 
   
 input {
-    border-radius: 10px; 
+    border-radius: 7px; 
     margin: 5px; 
-    font-size: 160%; 
+    font-size: 130%; 
+    border: nonec;
+}
+
+input[type="text"]{
+    width: 78vh;
+    height: 4.5vh;
+    border-radius: 20px;
+    padding-left: 5px;
+    text-align: left;
+    border: none;
 }
 
 input[type="submit"] {
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     font-size: 130%;
+    border: none;
+    background-color: #2d2c2c;
+    color: rgb(255, 255, 255);
+    border: 1px solid #2d2c2c;
 }
 
 input[type="submit"]:hover {
-    background-color: lightgray;
-    color: black;
+    color: rgb(255, 255, 255);
     cursor: pointer;
+    border: 1px solid #fff;
 }
 
 footer {
